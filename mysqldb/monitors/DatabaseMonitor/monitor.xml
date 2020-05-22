@@ -1,0 +1,21 @@
+<monitor>
+    <name>DBMonitor</name>
+    <type>managed</type>
+    <enabled>true</enabled>
+    <description>Monitors DBs</description>
+    <monitor-configuration>
+    </monitor-configuration>
+    <monitor-run-task>
+        <type>java</type>
+        <execution-style>scheduled</execution-style>
+        <java-task>
+            
+            <impl-class>
+                com.singularity.ee.agent.dbagent.task.monitor.DBAgentMonitor
+            </impl-class>
+            
+            <factory-method></factory-method>
+            <invoke-method></invoke-method>
+        </java-task>
+    </monitor-run-task>
+</monitor>
